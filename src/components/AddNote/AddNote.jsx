@@ -6,6 +6,9 @@ const AddNote = () => {
     <div>
         <div className='box'>
             <textarea name="" id="" rows="10" className='input' placeholder='Add Note Here....'></textarea>
+            <div className='btn-box'>
+                <button>ADD</button>
+            </div>
         </div>
     </div>
   )

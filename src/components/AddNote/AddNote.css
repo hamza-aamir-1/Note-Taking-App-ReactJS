@@ -2,7 +2,7 @@
     width: 80%;
     margin: 30px auto;
     border: 2px solid silver;
-    padding: 10px 17px;
+    padding: 13px 17px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,4 +16,23 @@
     text-align: justify;
     outline: none;
     border: none;
+}
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-box > button{
+    padding: 8px 18px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.btn-box > button:hover{
+    background-color: black;
 }
