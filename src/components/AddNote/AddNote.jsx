@@ -9,8 +9,8 @@ let notesArr = [];
 //         notesList
 //     )
 // }
-const notesList = [...notesArr];
-export {notesList};
+// const notesList = [...notesArr];
+// export {notesList};
 
 const AddNote = () => {
 
@@ -23,7 +23,7 @@ const AddNote = () => {
         // console.log(singleNote);
         // notesArr.push(singleNote);
         notesArr = [...notesArr, singleNote];
-        console.log(notesArr);
+        // console.log(notesArr);
         // notesListFun();
     }
 

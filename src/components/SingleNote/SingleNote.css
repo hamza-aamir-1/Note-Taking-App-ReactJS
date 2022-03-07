@@ -1,0 +1,45 @@
+.single-note-box{
+    padding: 20px 25px;
+    box-shadow: 7px 10px 25px 0px silver;
+    border-radius: 15px;
+    background-color: rgb(235, 235, 235);
+}
+.single-note-text{
+    padding-bottom: 10px;
+    font-size: 17px;
+    text-align: justify;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.single-note-btn-box{
+    text-align: right;
+}
+.single-note-btn{
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: silver;
+}
+.single-note-btn:first-child{
+    margin-right: 10px;
+}
+.single-note-btn:first-child:hover{
+    background-color: green;
+    color: white;
+}
+.single-note-btn:last-child:hover{
+    background-color: red;
+    color: white;
+}
+.single-note-btn:first-child:active{
+    color: white;
+    background-color: green;
+}
+.single-note-btn:last-child:active{
+    color: white;
+    background-color: red;
+}
