@@ -9,7 +9,6 @@ function App() {
         <span className='heading-one'>Note Taking App</span> <br /> <span className='heading-two'>by Hamza</span>
       </h1>
       <AddNote />
-      <NoteBox />
     </div>
   );
 }

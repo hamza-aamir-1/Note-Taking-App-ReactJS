@@ -1,16 +1,8 @@
 import React, { useState } from 'react'
+import NoteBox from '../NoteBox/NoteBox';
 import './AddNote.css'
 
 let notesArr = [];
-
-// export function notesListFun(){
-//     const notesList = [...notesArr];
-//     return(
-//         notesList
-//     )
-// }
-// const notesList = [...notesArr];
-// export {notesList};
 
 const AddNote = () => {
 
@@ -20,11 +12,8 @@ const AddNote = () => {
 
     const addNoteBtn = (event) => {
         event.preventDefault();
-        // console.log(singleNote);
-        // notesArr.push(singleNote);
         notesArr = [...notesArr, singleNote];
-        // console.log(notesArr);
-        // notesListFun();
+        console.log(notesArr);
     }
 
     let [singleNote, setSingleNote] = useState('');
@@ -36,9 +25,10 @@ const AddNote = () => {
                 <textarea name="" rows="10" value={singleNote} onChange={input} className='input' placeholder='Add Note Here....'></textarea>
                 <div className='btn-box'>
                     <button type='submit'>ADD</button>
-                </div>    
+                </div>
             </form>
         </div>
+        <NoteBox text={notesArr}/>
     </div>
   )
 }

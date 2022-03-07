@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import './SingleNote.css'
 
-const SingleNote = () => {
+const SingleNote = (props) => {
   return (
     <div className='single-note-box'>
         <div className='single-note-text'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vel. Fugiat rerum itaque cupiditate adipisci incidunt labore impedit sapiente, quis est accusantium et eius dolorem illo eligendi suscipit. Expedita, natus!
+            {props.text}
         </div>
         <div>
             <form action="" className='single-note-btn-box'>
