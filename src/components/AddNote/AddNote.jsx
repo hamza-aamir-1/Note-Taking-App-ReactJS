@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import NoteBox from '../NoteBox/NoteBox';
 import './AddNote.css'
 
 let notesArr = [];
@@ -13,7 +12,7 @@ const AddNote = () => {
     const addNoteBtn = (event) => {
         event.preventDefault();
         notesArr = [...notesArr, singleNote];
-        console.log(notesArr);
+        // console.log(notesArr);
     }
 
     let [singleNote, setSingleNote] = useState('');
@@ -28,7 +27,6 @@ const AddNote = () => {
                 </div>
             </form>
         </div>
-        <NoteBox text={notesArr}/>
     </div>
   )
 }

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import SingleNote from '../SingleNote/SingleNote'
+import './NoteBox.css'
 
 const NoteBox = (props) => {
   return (
     <div>
-        <SingleNote text={props.text}/>
+      {console.log(props.text)}
     </div>
   )
 }
