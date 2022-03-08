@@ -11,8 +11,12 @@ const AddNote = () => {
 
     const addNoteBtn = (event) => {
         event.preventDefault();
-        notesArr = [...notesArr, singleNote];
-        // console.log(notesArr);
+        const notesObj = {
+            id: Math.random(),
+            text: singleNote
+        };
+        notesArr = [...notesArr, notesObj];
+        console.log(notesArr);
     }
 
     let [singleNote, setSingleNote] = useState('');
