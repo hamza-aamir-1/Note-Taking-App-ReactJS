@@ -12,6 +12,7 @@
     letter-spacing: 1px;
 }
 .single-note-btn-box{
+    margin-top: 10px;
     text-align: right;
 }
 .single-note-btn{
@@ -43,3 +44,14 @@
     color: white;
     background-color: red;
 }
+
+/* @media screen and (max-width: 768px) {
+    .single-note-box{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .single-note-box{
+        width: 100%;
+    }
+} */

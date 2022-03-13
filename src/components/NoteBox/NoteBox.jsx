@@ -1,12 +1,14 @@
-// import React, { useState } from 'react'
-// import './NoteBox.css'
+import React, { useState } from 'react'
+import './NoteBox.css'
 
-// const NoteBox = (props) => {
-//   return (
-//     <div>
-//       {console.log(props.text)}
-//     </div>
-//   )
-// }
+const NoteBox = (props) => {
+  return (
+    <section className='notesBoxMain'>
+        <div className='notesBox'>
+            {props.singleNotes}
+        </div>
+    </section>
+  )
+}
 
-// export default NoteBox
+export default NoteBox

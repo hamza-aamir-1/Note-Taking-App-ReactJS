@@ -1,8 +1,8 @@
 import './App.css';
 import {useState} from 'react'
 // import AddNote from './components/AddNote/AddNote';
-// import NoteBox from './components/NoteBox/NoteBox';
-// import SingleNote from './components/SingleNote/SingleNote';
+import NoteBox from './components/NoteBox/NoteBox';
+import SingleNote from './components/SingleNote/SingleNote';
 
 function App() {
 
@@ -33,24 +33,16 @@ function App() {
       </div>
 
       <div>
-        <div>
+      <NoteBox singleNotes=
           {
             notesArr.map((item) => {
-              return <h1>{item.text}</h1>
+              return (
+                <SingleNote text={item.text}/>
+              )
             })
           }
-        </div>
-        <div>
-            <form>
-                <button type='submit'>Edit</button>
-                <button type='submit'>Delete</button>    
-            </form>
-        </div>
+      />
       </div>
-
-      {/* <AddNote />
-      <NoteBox text='I am Note Box'/>
-      <SingleNote text='I am Single Note'/> */}
     </div>
   );
 }

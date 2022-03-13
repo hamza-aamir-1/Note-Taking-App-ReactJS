@@ -1,0 +1,48 @@
+.notesBoxMain{
+    padding: 60px;
+}
+.notesBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+
+}
+@media screen and (max-width: 1200px) {
+    .notesBoxMain{
+        padding: 50px;
+    }
+    .notesBox {
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .notesBoxMain{
+        padding: 50px;
+    }
+    .notesBox {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .notesBoxMain{
+        padding: 35px;
+    }
+    .notesBox {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 35px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .notesBoxMain{
+        padding: 30px;
+    }
+    .notesBox {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+}
