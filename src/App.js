@@ -12,6 +12,7 @@ function App() {
       id: Math.random(),
       text: note
     }]);
+    setNote('');
   }
 
   const [note, setNote] = useState('');
