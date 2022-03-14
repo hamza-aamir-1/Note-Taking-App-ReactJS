@@ -1,5 +1,6 @@
 .notesBoxMain{
     padding: 60px;
+    padding-top: 20px;
 }
 .notesBox {
     display: grid;
