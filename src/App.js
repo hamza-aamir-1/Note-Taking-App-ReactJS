@@ -1,6 +1,6 @@
 import './App.css';
 import {useState} from 'react'
-// import AddNote from './components/AddNote/AddNote';
+import AddNote from './components/AddNote/AddNote';
 import NoteBox from './components/NoteBox/NoteBox';
 import SingleNote from './components/SingleNote/SingleNote';
 
@@ -24,16 +24,12 @@ function App() {
         <span className='heading-one'>Note Taking App</span> <br /> <span className='heading-two'>by Hamza</span>
       </h1>
 
-      <div>
-          <form onSubmit={submitNote}>
-              <textarea onChange={(event) => setNote(event.target.value)} value={note} placeholder='Add Note Here....'></textarea>
-              <div>
-                  <button type='submit'>ADD</button>
-              </div>
-          </form>
-      </div>
+      <AddNote 
+        submitNote={submitNote}
+        changeNote={(event) => setNote(event.target.value)}
+        noteValue={note}
+      />
 
-      <div>
       <NoteBox singleNotes=
           {
             notesArr.map((item) => {
@@ -43,7 +39,6 @@ function App() {
             })
           }
       />
-      </div>
     </div>
   );
 }
