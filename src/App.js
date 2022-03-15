@@ -15,8 +15,20 @@ function App() {
     setNote('');
   }
 
+  const editNote = (myId) => {
+    let myIndex;
+    for (let index = 0; index < notesArr.length; index++) {
+      if (notesArr[index].id === myId) {
+        myIndex = index;
+          break;
+      }
+    }
+    console.log(notesArr[myIndex].text)
+  }
+
   const [note, setNote] = useState('');
   const [notesArr, setNotesArr] = useState([]);
+  const [isEdit, setIsEdit] = useState(false);
 
   return (
     <div>
@@ -34,7 +46,7 @@ function App() {
           {
             notesArr.map((item) => {
               return (
-                <SingleNote text={item.text}/>
+                <SingleNote text={item.text} key={item.id} editNote={() => editNote(item.id)}/>
               )
             })
           }

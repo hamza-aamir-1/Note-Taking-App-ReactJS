@@ -9,7 +9,7 @@ const SingleNote = (props) => {
         </div>
         <div>
             <form action="" className='single-note-btn-box'>
-                <button type='button' className='single-note-btn'>Edit</button>
+                <button type='button' onClick={props.editNote} className='single-note-btn'>Edit</button>
                 <button type='button' className='single-note-btn'>Delete</button>
             </form>
         </div>
