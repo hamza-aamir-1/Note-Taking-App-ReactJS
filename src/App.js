@@ -8,10 +8,24 @@ function App() {
 
   const submitNote = (event) => {
     event.preventDefault();
-    setNotesArr([...notesArr, {
-      id: Math.random(),
-      text: note
-    }]);
+    if(isEdit == false){
+      setNotesArr([...notesArr, {
+        id: Math.random(),
+        text: note
+      }]);
+    }
+    else{
+      console.log("editing");
+      let myIndex;
+      for (let index = 0; index < notesArr.length; index++) {
+        if (notesArr[index].text === note) {
+          myIndex = index;
+          break;
+        }
+      }
+      // notesArr[myIndex].text = note;
+      // let newNote = notesArr[myIndex];
+    }
     setNote('');
   }
 
@@ -23,7 +37,9 @@ function App() {
           break;
       }
     }
-    console.log(notesArr[myIndex].text)
+    // console.log(notesArr[myIndex].text);
+    setNote(notesArr[myIndex].text);
+    setIsEdit(true);
   }
 
   const [note, setNote] = useState('');
